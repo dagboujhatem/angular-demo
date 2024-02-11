@@ -9,6 +9,9 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'about', component: AboutComponent},
   { path: 'service/:serviceName/:id', component: AboutComponent},
+  { path: 'users', loadChildren: () => import('./dashboard/users/users.module').then(m => m.UsersModule) },
+  { path: 'categories', loadChildren: () => import('./dashboard/categories/categories.module').then(m => m.CategoriesModule) },
+  { path: 'products', loadChildren: () => import('./dashboard/products/products.module').then(m => m.ProductsModule) },
   { path: '**', component: Page404Component},
 ];
 

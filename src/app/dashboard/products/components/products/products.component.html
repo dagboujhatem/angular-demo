@@ -1,1 +1,8 @@
-<p>products works!</p>
+<p>products list</p>
+<button routerLink="/products/add">Add new product</button>
+ <ul *ngFor="let product of data">
+    <li>
+        {{ product.name}} 
+        <button [routerLink]="['/products/update', product.id]">Update</button>
+    </li>
+ </ul>

@@ -1,1 +1,9 @@
-<p>update-product works!</p>
+<p>update product : {{id}}!</p>
+<form *ngIf="productForm" [formGroup]="productForm" (ngSubmit)="updateProduct()">
+    <input type="text" formControlName="name">
+    <input type="text" formControlName="description">
+    <input type="submit" value="Update">
+    <button routerLink="/products">Cancel</button>
+
+</form>
+

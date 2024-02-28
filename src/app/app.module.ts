@@ -8,6 +8,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { Page404Component } from './pages/page-404/page-404.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

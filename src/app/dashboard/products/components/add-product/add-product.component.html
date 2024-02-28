@@ -1,1 +1,7 @@
-<p>add-product works!</p>
+<form *ngIf="productForm" [formGroup]="productForm" (ngSubmit)="saveProduct()">
+    <input type="text" formControlName="name">
+    <input type="text" formControlName="description">
+    <input type="submit" value="Save">
+    <button routerLink="/products">Cancel</button>
+
+</form>

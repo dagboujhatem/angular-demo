@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop HP",
+      "description": "Laptop"
+    },
+    {
+      "id": "",
+      "name": "coka",
+      "description": "coka"
+    },
+    {
+      "id": "6b37",
+      "name": "fanta",
+      "description": "fanta"
+    }
+  ]
+}
